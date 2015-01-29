@@ -1,0 +1,120 @@
+.webGrid
+        {
+            margin: 4px;
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        .header
+        {
+            font-weight: lighter;
+            color: #ffffff;
+            background-color: #0bacd3;
+            width: 25%;
+            text-align :center ;
+            vertical-align :middle ;
+            
+        }
+       
+        .header a
+        {
+            color:white ;
+            }
+        
+        .webGrid th, .webGrid td
+        {
+            border: 1px solid #C0C0C0;
+            padding: 5px;
+            font-size: 12px;
+            font-family: Arial;         
+           
+            
+        }
+        .alt
+        {
+        }
+        .person
+        {
+            width: 200px;
+            font-size: 12px;
+            font-family: Arial;
+        }
+        
+        .HideColumn
+        {
+            display:none ;
+            width :0px;
+            }
+        
+        .ddlwidth
+        {
+            width: 250px;
+            height: 100px;
+        }
+        .tdfontstyle
+        {
+            font-size: 12px;
+            font-weight: lighter;
+        }
+        .imagesize
+        {
+            width: 150px;
+            height: 80px;
+            padding-left: 12px;
+        }
+        .webGrid tbody tr:hover
+        {
+            cursor: pointer;
+          
+        }
+        
+        .highlight
+        {  
+              background-color: #F6F6F6;            
+         }
+        
+        .pics
+        {
+            height: 232px;
+            width: 232px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pics img
+        {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            width: 1300px;
+            height: 300px;
+            top: 0;
+            left: 0;
+            margin-left: 4px;
+            margin-right :4px;
+        }
+        
+        .tablegrid
+        {
+            margin: 4px;
+            border-collapse: collapse;
+            width: 100%;
+           
+            }
+            
+            .tablegrid th, .tablegrid td
+        {
+            border: 1px solid #C0C0C0;
+            padding: 5px;
+            font-size: 12px;
+            font-family: Arial;
+            text-align :center ;
+            vertical-align :middle ;
+            
+        }
+        
+        .tablegrid tbody tr:hover
+        {
+            cursor:default ;
+          
+        }

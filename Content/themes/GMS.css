@@ -1,0 +1,211 @@
+﻿body
+{
+    background-color: #fff;
+    margin: 0px;
+    font-family: Arial;
+    padding: 0px; /* behavior: url(CSS/csshover3.htc); */
+}
+
+
+.ActPageLink
+{
+    padding: 0 0 0 11px;
+    font-size: 12px;
+    color: #000;
+    height: 24px;
+    text-align: right;
+    line-height: 24px;
+    position: relative;
+    border: 15px;
+    border-spacing: 10px;
+    width: 22px;
+}
+
+.PageLink
+{
+    padding: 0 0 0 11px;
+    font-size: 12px;
+    color: blue;
+    height: 24px;
+    text-align: right;
+    line-height: 24px;
+    position: relative;
+    border: 15px;
+    border-spacing: 10px;
+    width: 22px;
+}
+.PageLinkNew
+{
+    padding: 0 0 0 11px;
+    font-size: 12px;
+    color: black;
+    height: 24px;
+    text-align: right;
+    line-height: 24px;
+    position: relative;
+    border: 15px;
+    border-spacing: 10px;
+    width: 22px;
+}
+
+.FilterLeft
+{
+    font-size: 12px;
+    text-align: left;
+    padding: 0px 2px 2px 4px;
+}
+.FilterLeft2
+{
+    font-size: 12px;
+    text-align: left;
+    padding: 0px 2px 2px 4px line-height: 28px;
+    height: 18px;
+    width: 100px;
+}
+.FilterRight2
+{
+    font-size: 12px;
+    text-align: right;
+    padding: 0px 2px 2px 4px line-height: 28px;
+}
+
+a
+{
+    font-size: 11px;
+    outline: none;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #ff8200;
+}
+a:hover
+{
+    text-decoration: underline;
+    outline: none;
+     color: #ff8200;
+}
+
+
+.Heading
+{
+    font-size: 32px;
+    height: 60px;
+    padding-top: 35px;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Title
+{
+    font-size: 16px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: left;
+    color: #131313;
+    text-align: left;
+    font-weight: bold;
+    height: 15px;
+    width: 855px;
+}
+
+
+.Button
+{
+    height: 22px;
+    font-size: 11px;
+    text-transform: capitalize;
+    padding-bottom: 3px;
+    margin-right: 0px;
+    background-color: #0bacd3;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 22px;
+    border: 0px;
+    font-weight: bold;
+    min-width: 60px;
+    font-family: Arial
+}
+.Button:hover
+{
+    height: 22px;
+    font-size: 11px;
+    text-transform: capitalize;
+    padding-bottom: 3px;
+    margin-right: 0px;
+    background-color: #F4CC2B;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 22px;
+    border: 1px solid #004100;
+    font-weight: bold;
+    min-width: 60px;
+      font-family: Arial
+}
+
+.Footer
+{
+    padding: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.Footerinner
+{
+    padding: 10px 0 0 0px;
+    font-size: 12px;
+    vertical-align: bottom;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    height: 25px;
+}
+
+.Footerfixed
+{
+    position: fixed;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+    background-color: #fff;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    position: fixed;
+    border-top: solid 1px #e4e4e4;
+}
+
+.TopcolorGreen
+{
+    background: #006428;
+    height: 13px;
+    width: 100%;
+}
+.TopcolorYellow
+{
+    background-color: #F7CB2A;
+    height: 5px;
+    width: 100%;
+}
+
+
+.Legend
+{
+    font-size: 15px;
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+

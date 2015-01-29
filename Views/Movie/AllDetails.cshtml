@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<link href="../../Content/Jquerytab.css" rel="stylesheet" type="text/css" />
+<link href="../../Content/Grid.css" rel="stylesheet" type="text/css" />
+<html >
+<head>
+
+ <style type="text/css" >
+ 
+ </style>
+
+</head>
+<body >
+
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Movie Detalis</a></li>
+<li><a href="#tabs-2">Actor Details</a></li>
+<li><a href="#tabs-3">Producer Details</a></li>
+</ul>
+<div id="tabs-1">
+
+@{ 
+    
+    IEnumerable<DeltaxMoviePanel.Models.MovieModel> Movies = ViewData["MovieList"] as IEnumerable<DeltaxMoviePanel.Models.MovieModel>;
+}
+<table  width="100%" class="tablegrid ">
+    <tr>
+        <th  class ="header ">Movie Name</th>
+        <th class ="header ">Year Of Realse</th>
+        <th class ="header ">Plot</th>
+         <th class ="header ">Poster</th>
+    </tr>
+     @foreach (DeltaxMoviePanel.Models.MovieModel  Movie in Movies)
+     {
+        <tr>
+            <td>@Movie.MovieName </td>
+            <td>@String.Format("{0:d}", Movie.YearOfRelease)  </td>
+            <td>@Movie.Plot </td>
+            <td><img src="@Movie.Poster" class ="imagesize "/></td>
+        </tr>
+     }
+</table>
+
+
+
+
+</div>
+<div id="tabs-2">
+
+@{
+     
+    IEnumerable<DeltaxMoviePanel.Models.ActorModel> Actors = ViewData["ActorList"] as IEnumerable<DeltaxMoviePanel.Models.ActorModel>;
+ 
+}
+<table width="100%" class="tablegrid ">
+    <tr>
+        <th class ="header ">Actor Name</th>
+        <th class ="header ">DOB</th>
+        <th class ="header ">Sex</th>
+         <th class ="header ">Bio</th>
+    </tr>
+     @foreach (DeltaxMoviePanel.Models .ActorModel  Actor in Actors)
+     {
+        <tr>
+            <td>@Actor.ActorName </td>
+            <td>@String.Format("{0:d}", Actor.dob)  </td>
+            <td>@Actor.ActorSex </td>
+            <td>@Actor.Bio</td>
+        </tr>
+     }
+</table>
+
+
+</div>
+<div id="tabs-3">
+<p>
+@{
+      
+    IEnumerable<DeltaxMoviePanel.Models.ProducerModel> Producers = ViewData["ProducerList"] as IEnumerable<DeltaxMoviePanel.Models.ProducerModel>;
+ 
+}
+<table class="tablegrid">
+    <tr>
+        <th class ="header ">Actor Name</th>
+        <th class ="header ">DOB</th>
+        <th class ="header ">Sex</th>
+         <th class ="header ">Bio</th>
+    </tr>
+     @foreach (DeltaxMoviePanel.Models.ProducerModel Producer in Producers)
+     {
+        <tr>
+            <td>@Producer.ProducerName </td>
+            <td>@String.Format("{0:d}", Producer.dob)  </td>
+            <td>@Producer.ProSex </td>
+            <td>@Producer.Bio</td>
+        </tr>
+     }
+</table>
+</p>
+</div>
+</div>
+
+</body>
+
+</html>
+
+<script type ="text/javascript"  >
+
+    $(document).ready(function () {
+        debugger;
+        $("#tabs").tabs();
+    });
+
+</script>
